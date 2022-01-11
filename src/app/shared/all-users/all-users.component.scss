@@ -1,0 +1,31 @@
+h3 {
+   margin: auto;
+   width: 80%;
+}
+.users-container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.users-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.user {
+   width: 32%;
+
+   margin: 10px 0;
+
+   border: 1px solid black;
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
+   text-align: center;
+
+   transition: all 0.2s linear;
+}
+
+.user:active {
+   border-color: violet;
+   background-color: gray;
+}

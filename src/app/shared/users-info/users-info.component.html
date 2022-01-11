@@ -1,0 +1,68 @@
+<div class="users_info" *ngIf="user">
+   <h3>User info</h3>
+   <div class="user_info">
+      <div class="tr_user_info">
+         <div class="name_info td_info">
+            <p>Name:</p>
+         </div>
+         <div class="value_name td_value">
+            <p>
+               {{ user.name }}
+            </p>
+         </div>
+      </div>
+      <div class="tr_user_info">
+         <div class="username_info td_info">
+            <p>User name:</p>
+         </div>
+         <div class="value_username td_value">
+            <p>
+               {{ user.username }}
+            </p>
+         </div>
+      </div>
+      <div class="tr_user_info">
+         <div class="address_info td_info">
+            <p>Address:</p>
+         </div>
+         <div class="value_address td_value">
+            <p>{{ user.address.city }}, {{ user.address.street }} </p>
+         </div>
+      </div>
+      <div class="tr_user_info">
+         <div class="email_info td_info">
+            <p>Email:</p>
+         </div>
+         <div class="value_email td_value">
+            <p>{{ user.email }}</p>
+         </div>
+      </div>
+      <div class="tr_user_info">
+         <div class="phone_info td_info">
+            <p>Phone:</p>
+         </div>
+         <div class="value_phone td_value">
+            <p>
+               {{ user.phone }}
+            </p>
+
+         </div>
+      </div>
+      <div class="tr_user_info">
+         <div class="website_info td_info">
+            <p>Website:</p>
+         </div>
+         <div class="value_website td_value">
+            <p>
+               {{ user.website }}
+            </p>
+
+         </div>
+      </div>
+   </div>
+   <button class="show_posts" (click)="getPosts()">Show posts</button>
+   <div *ngFor="let post of posts">
+      <h3>{{ post.title}}</h3>
+      <p>{{ post.body }}</p>
+   </div>
+</div>

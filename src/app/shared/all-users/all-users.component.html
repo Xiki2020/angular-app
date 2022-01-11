@@ -1,0 +1,11 @@
+<h3>All users</h3>
+<div class="users-container">
+   <div class="user" *ngFor="let user of users" (click)="getUserInfo(user.id)">
+      <h4>
+         {{ user.name }}
+      </h4>
+   </div>
+</div>
+
+
+<app-users-info [user]="user" [posts]="posts"></app-users-info>

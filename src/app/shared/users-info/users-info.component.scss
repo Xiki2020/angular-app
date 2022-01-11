@@ -1,0 +1,34 @@
+.users_info {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.user_info {
+   border: 1px solid black;
+}
+
+.td_info {
+   width: 30%;
+
+   border-right: 2px solid black;
+}
+
+.tr_user_info {
+   display: flex;
+   border: 1px solid black;
+}
+
+.tr_user_info div {
+   padding: 3px 10px;
+}
+
+.tr_user_info p {
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.show_posts {
+   width: 100%;
+
+   margin: 10px 0;
+}
